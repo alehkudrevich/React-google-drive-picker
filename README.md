@@ -76,6 +76,7 @@ export default App;
 |    viewMimeTypes |  string  |     optional     |Comma separated mimetypes. Use this in place of viewId if you need to filter multiple type of files. list: https://developers.google.com/drive/api/v3/mime-types.|
 |setIncludeFolders|  boolean  |     false        |Show folders in the view items.|
 |setSelectFolderEnabled|boolean|     false       |Allows the user to select a folder in Google Drive.|
+| setOwnedByMe     |  boolean |     false        | Filters the documents based on whether they are owned by the user, or shared with the user. Do not combine this setting with setIncludeFolders. When setIncludeFolders(true) is set, setOwnedByMe is ignored.|
 |   token          |  string  |     optional     | access_token to skip auth part|
 |  multiselect     |  boolean |     false        | Enable picker multiselect     |
 | supportDrives    |  boolean |     false        |    Support shared drives      |
